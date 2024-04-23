@@ -3,18 +3,17 @@ package com.dict.fot.ruh.labsheet_15;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "product")
 public class Product {
     private Integer id;
-    private String pname;
+    private String name;
     private float price;
 
     public Product() {
     }
 
-    public Product(Integer id, String pname, float price) {
+    public Product(Integer id, String name, float price) {
         this.id = id;
-        this.pname = pname;
+        this.name = name;
         this.price = price;
     }
 
@@ -29,11 +28,11 @@ public class Product {
     }
 
     public String getName() {
-        return pname;
+        return name;
     }
 
-    public void setName(String pname) {
-        this.pname = pname;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public float getPrice() {
